@@ -36,7 +36,7 @@ class MidDistanceDB:
         # region <800m Frame>
         frame_800 = ttk.Frame(nb, padding = '3 3 12 12')
 
-        def upload_file_800(event = None):
+        def upload_file_800(db_name = self.db_name):
             filename = filedialog.askopenfilename()
             upload_confirmation_800.set(f'Selected file: {filename}')
 
@@ -67,7 +67,7 @@ class MidDistanceDB:
                     mid_distance_db.close()
                 
             else:
-                submit_confirmation_800.set(f'Successfully submitted {filename} to database')
+                submit_confirmation_800.set(f'Successfully submitted {filename} to {db_name}')
 
 
         ttk.Button(frame_800, text = 'Upload File', command = upload_file_800).grid(column = 1, row = 0, sticky = (W, E))
@@ -84,7 +84,7 @@ class MidDistanceDB:
 
         frame_400 = ttk.Frame(nb, padding = '3 3 12 12')
 
-        def upload_file_400(event = None):
+        def upload_file_400(db_name = self.db_name):
             filename = filedialog.askopenfilename()
             upload_confirmation_400.set(f'Selected file: {filename}')
 
@@ -115,7 +115,7 @@ class MidDistanceDB:
                     mid_distance_db.close()
                 
             else:
-                submit_confirmation_400.set(f'Successfully submitted {filename} to database')
+                submit_confirmation_400.set(f'Successfully submitted {filename} to {db_name}')
 
 
         ttk.Button(frame_400, text = 'Upload File', command = upload_file_400).grid(column = 1, row = 0, sticky = (W, E))
