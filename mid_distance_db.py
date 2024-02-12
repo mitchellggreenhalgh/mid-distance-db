@@ -152,7 +152,6 @@ class MidDistanceDB:
         new_db = sqlite3.connect(self.db_name)
         new_connection = new_db.cursor()
 
-        # TODO: 800m table
         new_connection.execute('''
                             CREATE TABLE splits_800m (
                                athlete TEXT,
