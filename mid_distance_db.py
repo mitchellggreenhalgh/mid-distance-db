@@ -185,7 +185,7 @@ class MidDistanceDB:
         now = datetime.now()
         
         backup_files = glob('backup_DBs/backup*.db')
-        backup_period = timedelta(days = 30)
+        backup_period = timedelta(days = 14)
         backup_db_name = 'backup_DBs/backup_middistanceDB_' + str(date.today()) + '.db'
         
         timestamps = [datetime.fromtimestamp(os.path.getctime(db)) for db in backup_files]
