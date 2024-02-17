@@ -1,0 +1,9 @@
+Accidentally resubmitted NBNI 2023 800m data. The following are the races that have been resubmitted and the approximate number of dups (always a couple less than the estimate because of lap errors that remove those individuals).
+
+NBNI 2023 Duplicates:
+----------------------
+frosh 800m ~ 50
+rs 800m ~ 52
+rs 800f ~ 57
+champ 800m ~ 81
+champ 800f ~ 72
