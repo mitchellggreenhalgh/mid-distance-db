@@ -1,4 +1,4 @@
-# Modules in the Conda Environment I used to build the app:
+# Conda Environment:
 
 __Name__ | __Version__    
 ---------|---------------
